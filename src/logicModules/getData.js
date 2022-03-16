@@ -6,7 +6,7 @@ import { render } from './render.js';
 import { favCityOnLoadCheck } from './utilityButtons.js';
 
 const getCityData = (cityToDisplay) => {
-    $.get(`https:/api.openweathermap.org/data/2.5/weather?q=${cityToDisplay}
+    $.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityToDisplay}
            &appid=b5aa9741f34fd7ef2daf3cfe3eb0d2fc&units=metric`, (data) => {
         render.renderCity(data);
     })
