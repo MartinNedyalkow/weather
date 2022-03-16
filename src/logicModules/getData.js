@@ -14,7 +14,7 @@ const getCityData = (cityToDisplay) => {
             favCityOnLoadCheck(data);
         });
 };
-const getCityDataCoords = (lat, lon) => $.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=b5aa9741f34fd7ef2daf3cfe3eb0d2fc&units=metric`, (data) => {
+const getCityDataCoords = (lat, lon) => $.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=b5aa9741f34fd7ef2daf3cfe3eb0d2fc&units=metric`, (data) => {
     render.renderCityCoords(data);
 }).then((data) => {
     favCityOnLoadCheck(data);
@@ -49,7 +49,7 @@ const dayOfTheWeek=(data) => {// Returns Name of day
 };
 
 const fiveDayFill=(city, i)=>{// Fills 5 day forcast
-    $.getJSON('http://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid=b5aa9741f34fd7ef2daf3cfe3eb0d2fc&units=metric',
+    $.getJSON('https://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid=b5aa9741f34fd7ef2daf3cfe3eb0d2fc&units=metric',
         // eslint-disable-next-line no-loop-func
         function(data) {
             $(`#Date-day-${i}`).empty().append(
