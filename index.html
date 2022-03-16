@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/pics/fontawesome/css/all.css">
+    
+</head>
+<body >
+    <header>
+        <div id="cities" class="button-group">
+            <button id="sofia" class="city-button">Sofia</button>
+            <button id="london" class="city-button">London</button>
+            <button id="paris" class="city-button">Paris</button>
+            <button id="madrid" class="city-button">Madrid</button>
+            <button id="rome" class="city-button">Rome</button>
+                <input type="text" id="search-city-input" class="input-search"placeholder="Search city...">
+                <a id="search-city-button" class="fas fa-search-location"></a>
+                <button id="get-location" class="city-button">My Location</button>
+                <button id="Home" class="Home-button">Home</button>             
+        </div>
+    </header>    
+    <main id="current-city-wrapper">
+        <div class="current-city">
+            <p id="current-city-name">City</p> <i id="fav-icon" class="far fa-star"></i>
+            <img id="current-city-icon"></img>
+            <p id="current-city-temp">temp</p>
+        </div>
+        <div class="content">
+            <p class="current-city-Desk" id="current-city-Desk"></p>
+            <p class="current-city-Wind" id="current-city-Wind"></p>
+            <p class="current-city-Humidity" id="current-city-Humidity"></p>
+            <p class="current-city-Pressure" id="current-city-Pressure"></p>
+        </div>
+    </main>
+    
+    
+
+    <footer class="footer">
+            <div id='hideshow'>More</div>
+        <div id="day-one" class="Days">
+            <p class="Date" id="Date-day-7"></p>
+            <img class="Icon" id="Icon-day-7">
+            <p class="Temp" id="Temp-day-7"></p>
+            <div class='content'>
+                    <p class="Desk" id="Desk-7"></p>
+                    <p class="Wind" id="Wind-7"></p>
+                    <p class="Humidity" id="Humidity-7"></p>
+                    <p class="Pressure" id="Pressure-7"></p>
+                </div>
+        </div>
+        <div id="day-two" class="Days">
+            <p class="Date" id="Date-day-15"></p>
+            <img class="Icon" id="Icon-day-15">
+            <p class="Temp" id="Temp-day-15"></p>
+            <div class='content'>
+                    <p class="Desk" id="Desk-15"></p>
+                    <p class="Wind" id="Wind-15"></p>
+                    <p class="Humidity" id="Humidity-15"></p>
+                    <p class="Pressure" id="Pressure-15"></p>
+                </div>
+        </div>
+        <div id="day-three" class="Days">
+            <p class="Date" id="Date-day-23"></p>
+            <img class="Icon" id="Icon-day-23">
+            <p class="Temp" id="Temp-day-23"></p>
+            <div class='content'>
+                    <p class="Desk" id="Desk-23"></p>
+                    <p class="Wind" id="Wind-23"></p>
+                    <p class="Humidity" id="Humidity-23"></p>
+                    <p class="Pressure" id="Pressure-23"></p>
+                </div>
+        </div>
+        <div id="day-four" class="Days">
+            <p class="Date" id="Date-day-31"></p>
+            <img class="Icon" id="Icon-day-31">
+            <p class="Temp" id="Temp-day-31"></p>
+            <div class='content'>
+                    <p class="Desk" id="Desk-31"></p>
+                    <p class="Wind" id="Wind-31"></p>
+                    <p class="Humidity" id="Humidity-31"></p>
+                    <p class="Pressure" id="Pressure-31"></p>
+                </div>
+        </div>
+        <div id="day-five" class="Days">
+            <p class="Date" id="Date-day-39"></p>
+            <img class="Icon" id="Icon-day-39">
+            <p class="Temp" id="Temp-day-39"></p>
+            <div class='content'>
+                    <p class="Desk" id="Desk-39"></p>
+                    <p class="Wind" id="Wind-39"></p>
+                    <p class="Humidity" id="Humidity-39"></p>
+                    <p class="Pressure" id="Pressure-39"></p>
+                </div>
+        </div>
+  </head>
+  <body>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApJKHOIc-aTe5lYRlboz62NGusxDzufzs=places"></script>>
+    <script>
+      let input = document.getElementById('search-city-input');
+      let autocomplete = new google.maps.places.Autocomplete(input,{types: ['(cities)']});
+      google.maps.event.addListener(autocomplete, 'place_changed', () => {
+         let place = autocomplete.getPlace();
+      })
+    </script>
+    </footer>
+
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>

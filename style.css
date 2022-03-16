@@ -1,0 +1,177 @@
+.footer{
+    display: inline-flex;
+    position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(202, 182, 182, 0.534);
+  opacity: 0.8;
+  
+  width: 56%;
+  height: 270px;
+  
+  
+}
+.Days{
+    padding: 1%;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 115%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+.search-city { 
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+.button-group { 
+  display: inline;
+    padding: 2px;
+    overflow: hidden;
+    margin-left: 310px;
+}
+.city-button { 
+    width: 6.1%;
+    height: 30px;
+    size: 20%;
+    color:rgb(202, 202, 202);
+    background-color: Transparent;
+    font-size: 13px;
+    border: none;
+    cursor:pointer;
+    
+}
+.Home-button{
+  width: 5.9%;
+  height: 30px;
+  size: 20%;
+  color:rgb(202, 202, 202);
+  background-color: Transparent;
+  font-size: 13px;
+  border: none;
+  cursor:pointer;
+}
+.input-search { 
+    width : 10%;
+    height: 2em;
+}
+
+#current-city-name{
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#current-city-temp{
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+#current-city-icon{
+  display: block;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  filter: blur(0.04rem)
+}
+#current-city{
+    padding: 10px;
+    overflow: hidden;  
+    margin: 0 auto 0 auto;
+}
+
+html { 
+    background: url(./src/pics/sunbackground.jpg) no-repeat center center fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+  display:none;
+  text-align: left;
+}
+.Date{
+  margin: 0px 0px 0px 0px;
+}
+.Temp{
+  margin: 0px 0px 0px 0px;
+  
+}
+.Icon{
+  margin: 0px 0px 0px 0px;
+  filter: blur(0.04rem)
+}
+.Desk{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px 0px 0px 0px;
+  font-size: 80%;
+  text-transform:capitalize;
+}
+.Wind{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px 0px 0px 0px;
+  font-size: 80%;
+}
+.Humidity{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px 0px 0px 0px;
+  font-size: 80%;
+}
+#hideshow{
+  display:block;
+  cursor: pointer;
+  width: 5.7%;
+  height:7%;
+  position: absolute;
+  top:0;
+  right:0;
+  opacity: 0.8;
+  color:rgb(58, 58, 58);
+}
+#fav-icon{
+  display: block;
+  text-align: center
+}
+#current-city-wrapper{
+  background: rgba(202, 182, 182, 0.534);
+  width: 56%;
+  height: 200px;
+  margin-left:auto;
+margin-right: auto;
+opacity: 0.8;
+}
+#search-city-button{
+  color: azure;
+  cursor: pointer;
+}
+
+#current-city-temp { 
+  font-size: 20px;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Pressure{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px 0px 0px 0px;
+  font-size: 80%;
+}
+
+.starting-page {
+  position: absolute;
+  top: 50%;
+  height: 70px;
+  width: 100%;
+  align-content: center;
+  left: 25%;
+  right:25%;
+  margin-left: -100px;
+}
